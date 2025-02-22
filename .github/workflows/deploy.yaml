@@ -33,6 +33,7 @@ jobs:
           echo "repositoryUrl ${{ github.repositoryUrl}}"
           echo "job ${{ github.job}}"
           echo "workflow ${{ github.workflow}}"
+          echo "runner os : $RUNNER_OS"
       
       - name: testing 
         if: github.ref_name == 'wrkflows'  

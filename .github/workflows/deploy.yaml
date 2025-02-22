@@ -12,6 +12,10 @@ jobs:
       contents: read
 
     steps:
-      - name: testing 
+      - name: Checkout repo 
+        uses: actions/checkout@v2 
+
+      - name: List the contents
         run: |
-          echo "hello"
+          echo "The presnt directory is $(pwd)"
+          echo "The contents of this repo are \n $(ls)"

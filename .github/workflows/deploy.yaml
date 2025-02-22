@@ -18,4 +18,15 @@ jobs:
       - name: List the contents
         run: |
           echo "The presnt directory is $(pwd)"
-          echo "The contents of this repo are \n $(ls)"
+          echo -e "The contents of this repo are \n $(ls)"
+          echo "########## github details #######"
+          echo "repo ${{ github.repository}}"
+          echo "action ${{ github.action }}"
+          echo "ref ${{ github.ref}}"
+          echo "ref_name ${{ github.ref_name}}"
+          echo "ref_protected ${{ github.ref_protected}}"
+          echo "ref_type ${{ github.ref_type}}"
+          echo "repository_owner ${{ github.repository_owner}}"
+          echo "repositoryUrl ${{ github.repositoryUrl}}"
+          echo "job ${{ github.job}}"
+          echo "workflow ${{ github.workflow}}"

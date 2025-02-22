@@ -1,0 +1,14 @@
+name: My sample learning workflows 
+on:
+  push:
+    branches: [ wrkflows]
+    
+
+jobs:
+  Build:
+    name: Build JOB
+    runs-on: ubuntu
+    steps:
+      - name: testing 
+        run: |
+          echo "hello"

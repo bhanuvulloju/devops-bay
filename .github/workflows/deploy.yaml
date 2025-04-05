@@ -51,6 +51,6 @@ jobs:
       - name: testing 
         if: github.ref_name == 'wrkflows'  
         run: |
-          echo "The branch is workflows "
+          echo "The branch is workflows"
           
 
